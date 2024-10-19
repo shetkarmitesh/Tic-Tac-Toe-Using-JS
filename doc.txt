@@ -1,0 +1,90 @@
+create file index.html,style,css,main.js
+
+index.html:
+    in html file define document name and link style
+    in body tag defined main tag which contain heading and container class 
+
+    in conatiner we define game class with boxes as button
+    reset button with id reset_game
+ 
+style.css: 
+    good practice to define document margin and padding as 0
+
+    set background color and text align center for body tag 
+    set container class height 
+
+    to create box: 
+        contianer height  = 70vh means 70% as contianer of document
+        game height and width 60% of container
+        box  = divide the height and width in 3 part i.e 18vh or 18%
+
+        display = flex in one line and and flex-wrap = wrap which will make 3*3 box
+        to make center in game class justify-content and align-items center which make it center of class of game 
+
+        to set apce between boxes use gap property 
+
+        and same propertywill apply to conatiner which now boxes will be at center
+
+    reset button : style the button
+                    #reset-btn{
+                        padding: 1rem;
+                        font-size: 1.25rem;
+                        background-color: #3B1C32;
+                        color: aliceblue;
+                        border-radius: 1rem;
+                        box-shadow: 2px 0 1rem rgba(0,0,0,0.3);
+                        border: none;
+                    }
+app.js :
+    now we have to access the button using boxes for game
+    and reset button 
+
+    now we have to track turn of the player 1 or 2
+    take varible turn0 for player 1 and turn1 for player 2  and make player 1 as true
+
+
+    wining patterns we will store it in 2D array 
+    pattern{
+        horizontal
+        0,1,2
+        3,4,5
+        6,7,8
+        vertical 
+        0,3,6
+        1,4,7
+        2,5,8
+        digonal
+        0,4,8
+        2,4,6
+    }
+
+    now adding event listner on boxes
+    first iterate all the boxes and add event listener click and then change contain inside the box as x or O
+    to disable the button
+
+
+hw:
+O and x should have different colors
+solve dsa question based on tic tac toe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
